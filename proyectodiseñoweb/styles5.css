@@ -1,0 +1,61 @@
+/* Estilos base - Mobile First */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #e476c8;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.imagen img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 768px) {
+    .galeria {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .imagen {
+        flex: 1;
+        max-width: 300px;
+    }
+}
